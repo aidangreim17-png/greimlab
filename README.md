@@ -1,6 +1,12 @@
 # 🖥️ GreimLab
 
-> Enterprise-style homelab built to develop hands-on experience with Linux administration, Docker, networking, monitoring, authentication, and infrastructure management.
+![Ubuntu](https://img.shields.io/badge/Ubuntu-26.04_LTS-E95420?style=for-the-badge&logo=ubuntu)
+![Docker](https://img.shields.io/badge/Docker-29.x-2496ED?style=for-the-badge&logo=docker)
+![Grafana](https://img.shields.io/badge/Grafana-Latest-F46800?style=for-the-badge&logo=grafana)
+![Prometheus](https://img.shields.io/badge/Prometheus-Latest-E6522C?style=for-the-badge&logo=prometheus)
+![License](https://img.shields.io/github/license/aidangreim17-png/greimlab?style=for-the-badge)
+
+Enterprise-style homelab focused on monitoring, automation, authentication, and self-hosted infrastructure.
 
 ---
 
