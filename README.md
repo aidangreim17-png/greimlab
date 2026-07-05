@@ -84,11 +84,11 @@ greimlab/
 
 | Phase | Description |
 |--------|-------------|
-| Phase 1 | Ubuntu Server Installation |
-| Phase 2 | Docker & Docker Compose |
-| Phase 3 | Cloudflare Tunnel |
-| Phase 4 | Nginx Proxy Manager |
-| Phase 5 | Authelia |
+| Phase 1 | Proxmox VE Installation |
+| Phase 2 | Ubuntu Server Installation |
+| Phase 3 | Docker & Docker Compose |
+| Phase 4 | Domain Name & DNS Configuration |
+| Phase 5 | Cloudflare Tunnel |
 | Phase 6 | Homepage |
 | Phase 7 | Uptime Kuma |
 | Phase 8 | Prometheus |
