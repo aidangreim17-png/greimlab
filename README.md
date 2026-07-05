@@ -33,9 +33,9 @@ GreimLab is a self-hosted infrastructure environment running on Ubuntu Server th
 
 ---
 
-# 📸 Dashboard
+## 📊 Monitoring Dashboard
 
-*Screenshot coming soon.*
+![GreimLab Dashboard](assets/screenshots/grafana-dashboard.png)
 
 ---
 
