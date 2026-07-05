@@ -28,7 +28,7 @@ GreimLab is a self-hosted infrastructure environment running on Ubuntu Server th
 
 # 🏗️ Architecture
 
-                        Internet
+                         Internet
                             │
                             ▼
                   Cloudflare Tunnel
