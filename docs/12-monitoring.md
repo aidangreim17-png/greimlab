@@ -82,6 +82,19 @@ This separation allows Prometheus to specialize in data collection while Grafana
 
 ---
 
+# What Prometheus Does NOT Do
+
+Prometheus does not:
+
+- Create dashboards (Grafana does)
+- Monitor website availability (Uptime Kuma does)
+- Block advertisements (Pi-hole does)
+- Authenticate users (Authelia does)
+
+Instead, Prometheus specializes in collecting, storing, and querying time-series metrics that other services consume.
+
+---
+
 # Prerequisites
 
 Before beginning this phase, the following components were operational:
