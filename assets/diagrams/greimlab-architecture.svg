@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#6b7280"/>
+    </marker>
+    <style>
+      .bg { fill: #0b1020; }
+      .title { font: 700 38px Arial, sans-serif; fill: #ffffff; }
+      .subtitle { font: 400 18px Arial, sans-serif; fill: #cbd5e1; }
+      .box { fill: #111827; stroke: #334155; stroke-width: 2; rx: 16; filter: url(#shadow); }
+      .box2 { fill: #172033; stroke: #475569; stroke-width: 2; rx: 16; filter: url(#shadow); }
+      .cloud { fill: #1d4ed8; stroke: #60a5fa; stroke-width: 2; rx: 18; filter: url(#shadow); }
+      .security { fill: #7f1d1d; stroke: #f87171; stroke-width: 2; rx: 16; filter: url(#shadow); }
+      .monitor { fill: #064e3b; stroke: #34d399; stroke-width: 2; rx: 16; filter: url(#shadow); }
+      .service { fill: #312e81; stroke: #818cf8; stroke-width: 2; rx: 14; filter: url(#shadow); }
+      .label { font: 700 20px Arial, sans-serif; fill: #ffffff; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 400 14px Arial, sans-serif; fill: #cbd5e1; text-anchor: middle; dominant-baseline: middle; }
+      .tiny { font: 400 12px Arial, sans-serif; fill: #94a3b8; text-anchor: middle; dominant-baseline: middle; }
+      .arrow { stroke: #94a3b8; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .section { font: 700 18px Arial, sans-serif; fill: #e5e7eb; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1400" height="950"/>
+  <text x="700" y="55" class="title" text-anchor="middle">GreimLab Architecture</text>
+  <text x="700" y="88" class="subtitle" text-anchor="middle">Self-hosted infrastructure, authentication, monitoring, and alerting stack</text>
+
+  <rect x="100" y="130" width="260" height="90" class="cloud"/>
+  <text x="230" y="165" class="label">Internet</text>
+  <text x="230" y="195" class="small">Users / Remote Access</text>
+
+  <rect x="470" y="130" width="260" height="90" class="cloud"/>
+  <text x="600" y="165" class="label">Cloudflare Tunnel</text>
+  <text x="600" y="195" class="small">Secure public ingress</text>
+
+  <rect x="840" y="130" width="260" height="90" class="box2"/>
+  <text x="970" y="165" class="label">Porkbun DNS</text>
+  <text x="970" y="195" class="small">greimlab.net</text>
+
+  <path d="M360 175 H470" class="arrow"/>
+  <path d="M730 175 H840" class="arrow"/>
+
+  <rect x="90" y="270" width="1220" height="570" fill="#0f172a" stroke="#334155" stroke-width="2" rx="24"/>
+  <text x="125" y="305" class="section">Ubuntu Server 26.04 LTS / Docker Host</text>
+
+  <rect x="150" y="340" width="260" height="90" class="box"/>
+  <text x="280" y="375" class="label">Nginx Proxy Manager</text>
+  <text x="280" y="405" class="small">Reverse proxy / HTTPS</text>
+
+  <rect x="520" y="340" width="260" height="90" class="security"/>
+  <text x="650" y="375" class="label">Authelia</text>
+  <text x="650" y="405" class="small">SSO / Access Control</text>
+
+  <path d="M600 220 V290 H280 V340" class="arrow"/>
+  <path d="M410 385 H520" class="arrow"/>
+
+  <rect x="150" y="490" width="210" height="80" class="service"/>
+  <text x="255" y="520" class="label">Homepage</text>
+  <text x="255" y="548" class="small">Service portal</text>
+
+  <rect x="390" y="490" width="210" height="80" class="service"/>
+  <text x="495" y="520" class="label">Uptime Kuma</text>
+  <text x="495" y="548" class="small">Service checks</text>
+
+  <rect x="630" y="490" width="210" height="80" class="service"/>
+  <text x="735" y="520" class="label">Pi-hole</text>
+  <text x="735" y="548" class="small">DNS filtering</text>
+
+  <rect x="870" y="490" width="210" height="80" class="service"/>
+  <text x="975" y="520" class="label">Grafana</text>
+  <text x="975" y="548" class="small">Dashboards / alerts</text>
+
+  <rect x="1110" y="490" width="150" height="80" class="service"/>
+  <text x="1185" y="520" class="label">Portainer</text>
+  <text x="1185" y="548" class="small">Docker UI</text>
+
+  <rect x="150" y="645" width="240" height="90" class="monitor"/>
+  <text x="270" y="678" class="label">Prometheus</text>
+  <text x="270" y="708" class="small">Metrics collection</text>
+
+  <rect x="450" y="645" width="220" height="90" class="monitor"/>
+  <text x="560" y="678" class="label">Node Exporter</text>
+  <text x="560" y="708" class="small">Host metrics</text>
+
+  <rect x="710" y="645" width="220" height="90" class="monitor"/>
+  <text x="820" y="678" class="label">Pi-hole Exporter</text>
+  <text x="820" y="708" class="small">DNS metrics</text>
+
+  <rect x="970" y="645" width="240" height="90" class="monitor"/>
+  <text x="1090" y="678" class="label">Proxmox Exporter</text>
+  <text x="1090" y="708" class="small">VM / node metrics</text>
+
+  <rect x="1010" y="865" width="260" height="60" class="box2"/>
+  <text x="1140" y="887" class="label">Proxmox VE</text>
+  <text x="1140" y="912" class="small">192.168.1.167</text>
+
+  <rect x="520" y="865" width="260" height="60" class="cloud"/>
+  <text x="650" y="887" class="label">Discord</text>
+  <text x="650" y="912" class="small">Alert notifications</text>
+
+  <path d="M390 690 H450" class="arrow"/>
+  <path d="M670 690 H710" class="arrow"/>
+  <path d="M930 690 H970" class="arrow"/>
+  <path d="M970 530 V645" class="arrow"/>
+  <path d="M270 645 V585 H975 V570" class="arrow"/>
+  <path d="M1090 735 V865" class="arrow"/>
+  <path d="M975 570 V865 H780" class="arrow"/>
+
+  <text x="332" y="670" class="tiny">scrapes</text>
+  <text x="690" y="670" class="tiny">scrapes</text>
+  <text x="950" y="670" class="tiny">scrapes</text>
+  <text x="865" y="860" class="tiny">Discord webhook alerts</text>
+
+  <rect x="90" y="860" width="360" height="65" fill="#111827" stroke="#334155" rx="14"/>
+  <circle cx="125" cy="882" r="8" fill="#1d4ed8"/>
+  <text x="145" y="887" font-family="Arial" font-size="14" fill="#cbd5e1">External / cloud services</text>
+  <circle cx="125" cy="907" r="8" fill="#064e3b"/>
+  <text x="145" y="912" font-family="Arial" font-size="14" fill="#cbd5e1">Monitoring and exporters</text>
+</svg>
