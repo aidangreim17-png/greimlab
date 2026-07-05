@@ -91,40 +91,76 @@ The Homepage container automatically loads these configuration files during star
 
 ---
 
-# Homepage Configuration
+# Dashboard Organization
 
-Homepage was customized to organize GreimLab into logical service groups.
+Homepage was intentionally organized into functional groups that reflect how the GreimLab infrastructure is managed. Instead of listing services alphabetically, applications are grouped according to their role within the environment.
 
-Examples include:
+This organization reduces navigation time and provides a logical workflow when administering the homelab.
+
+---
 
 ## Infrastructure
 
-- Proxmox
+The Infrastructure section contains services responsible for hosting and managing the environment.
+
+Examples include:
+
+- Proxmox VE
 - Portainer
 - Nginx Proxy Manager
+
+These services are typically used when deploying new applications, managing containers, or maintaining the underlying platform.
 
 ---
 
 ## Monitoring
 
+The Monitoring section provides visibility into the health and performance of the environment.
+
+Services include:
+
 - Grafana
 - Prometheus
 - Uptime Kuma
+
+These applications are used daily to monitor resource utilization, verify service availability, and respond to alerts.
 
 ---
 
 ## Network
 
+Network services are grouped together because they manage connectivity and traffic flowing throughout the environment.
+
+Examples include:
+
 - Pi-hole
-- Cloudflare
+- Cloudflare Dashboard
+
+Keeping these services together simplifies DNS management and troubleshooting.
 
 ---
 
 ## Security
 
+Security-related applications are isolated into their own section.
+
+Examples include:
+
 - Authelia
 
-Grouping services by function improves usability and reduces navigation time.
+Since authentication protects multiple applications throughout GreimLab, placing security services in their own category makes administrative tasks more intuitive.
+
+---
+
+## Design Philosophy
+
+Homepage was designed to answer three questions immediately after login:
+
+1. Are all critical services online?
+2. Is the infrastructure healthy?
+3. Which administrative application needs attention?
+
+By grouping services according to their operational purpose, Homepage serves as both a navigation portal and a high-level operational dashboard.
 
 ---
 
