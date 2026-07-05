@@ -89,14 +89,14 @@ greimlab/
 | Phase 3 | Docker & Docker Compose |
 | Phase 4 | Domain Name & DNS Configuration |
 | Phase 5 | Cloudflare Tunnel |
-| Phase 6 | Homepage |
-| Phase 7 | Uptime Kuma |
-| Phase 8 | Prometheus |
-| Phase 9 | Grafana |
-| Phase 10 | Pi-hole |
-| Phase 11 | Proxmox Monitoring |
-| Phase 12 | Operations Dashboard |
-| Phase 13 | Discord Alerting |
+| Phase 6 | Nginx Proxy Manager |
+| Phase 7 | HTTPS and SSL Certificates |
+| Phase 8 | Authelia Authentication |
+| Phase 9 | Homepage |
+| Phase 10 | Uptime Kuma |
+| Phase 11 | Prometheus Monitoring |
+| Phase 12 | Grafana Monitoring |
+| Phase 13 | Monitoring Exporters |
 
 ---
 
