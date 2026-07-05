@@ -26,31 +26,10 @@ GreimLab is a self-hosted infrastructure environment running on Ubuntu Server th
 
 ---
 
-# 🏗️ Architecture
+## 🏗️ Architecture
 
-                         Internet
-                            │
-                            ▼
-                  Cloudflare Tunnel
-                            │
-                            ▼
-                 Nginx Proxy Manager
-                            │
-            ┌───────────────┴───────────────┐
-            ▼                               ▼
-        Authelia                     Homepage
-            │
-            ▼
-────────────────────────────────────────────────────
-Ubuntu Server (Docker)
-│
-├── Grafana
-├── Prometheus
-├── Pi-hole
-├── Uptime Kuma
-├── Proxmox Exporter
-├── Node Exporter
-└── Discord Alerting
+![GreimLab Architecture](assets/diagrams/greimlab-architecture.png)
+
 
 ---
 
